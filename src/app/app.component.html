@@ -1,0 +1,10 @@
+<div class="container">
+<h1>Harry potter</h1>
+<app-search-filter (searchTextChanged)="onSearchTextChanged($event)"></app-search-filter>
+<div class="row">
+  <div class="col-md-4 mb-4" *ngFor="let character of filteredCharacters">
+
+    <app-character-card [character]="character"></app-character-card>
+  </div>
+</div>
+
